@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body{
+  background-color: #282c34;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  /* border: 1px solid white; */
+  width: 50%;
+  margin: 0 auto;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+  /* box-shadow: 0 0 10px 0 rgba(0,0,0,0.5); */
+}
+
+@media screen and (max-width: 1200px) {
+  .container{
+    width: 70%;
+  }
+  
+}
+@media screen and (max-width: 950px) {
+  .container{
+    width: 95%;
+  }
+  
+}
+
+.header-div{
+
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+
+
+
+.cover-img{
+  width: 100%;
+  height: 20rem;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+  .cover-img {
+    height: 12rem; 
+  }
+}
+
+.profile-img{
+  object-fit: cover;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: 2px solid white;
+}
+
+.profile-img-div{
+  position: absolute;
+  bottom: -5rem;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.name{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.bio{
+  font-size: 1rem;
+  margin-top: 0;
+  color: #ffffffcf;
+}
+
+.icon-container{
+  justify-content: start !important;
+}
+
+.icon-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.icon-div:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+.icon{
+  width: 100px;
+  height: 100px;
+}
+
+
+.btn-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+
+.btn-info{
+  background-color: #111010;
+  border-color: #111010;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+
+.btn-info:hover{
+  background-color: #c82333  !important;
+  border-color: #c82333;
+  color: #ffff;
+}
